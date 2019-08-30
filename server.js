@@ -1,30 +1,28 @@
-/*var express = require('express');
-var app = express();
+ 
 
-
-app.use(express.static('public'));
-
-
-app.get('/', function (req, res) {
-    res.send('Hello, Shurik!');
+const express = require("express");
+  
+const app = express();
+app.use(express.static('public' ));
+// создаем парсер для данных в формате json
+const jsonParser = express.json();
+  
+app.post("/user", jsonParser, function (request, response) {
+    console.log(request.body);
+    if(!request.body) return response.sendStatus(400);
+     
+    response.json(request.body); // отправляем пришедший ответ обратно
 });
-
-app.post('/registration', function (req, res) {
-    console.log(req.body)
-    res.send('registration is completed') 
+  
+app.get("/", function(request, response){
+      
+    response.sendFile(__dirname + "/public.html");
 });
-
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!');
-});
-*/
- var http = require('http');
- http.createServer(function(req, res) {
-     res.writeHead(200, {'Content-Type': 'text/plain'});
-     res.end('Hello New Server\n');
- }).listen(8080);
- console.log('Server running on port 8080.');
- var express = require('express');
- var app = express();
- app.use(express.static("Desktop/Projects/backend-form-validation" + '/public' ));
- app.listen(8080);
+ function call(func) {
+     func(); 
+ }
+ var printSomething = function (){
+     console.log("Prosto text");
+ }
+ call(printSomething);
+app.listen(3000);

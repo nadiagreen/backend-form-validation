@@ -1,0 +1,73 @@
+<!Doctype html >
+<html>
+    <head>
+      <meta charset = "UTF-8">
+      <title>Registration</title> 
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>     
+<link rel="stylesheet" type="text/css" href="public.css">
+    </head>
+    <body>
+<!--------------------------------------------------
+        <div class = "dws-wrapper">
+          <div class = "dws-form">
+             <label class = "tab active" title = "Tab 1">Authorization</label> 
+             <label class = "tab " title = "Tab 2">Registration</label>
+             <form class = "tab-form ">
+               <div class =  "inputBox ">
+                   <label class = "labelText">Enter E-mail</label>
+                    <input class =  "input focus" type = "email">
+                 </div>
+                 <div class = "inputBox">
+                     <label class = "labelText">Enter password</label>
+                    <input class= "input" type = "password" >
+                 </div>
+                 <a href = "#" class = "button">Come in</a>
+                 <ul class = "social">
+                     <li><a href = "#"><i class = 'fab fa-facebook'></i></a></li>
+                     <li><a href = "#"><i class = 'fab fa-twitter'></i></a></li>
+                     <li><a href = "#"><i class = 'fab fa-instagram'></i></a></li>
+                     <li><a href = "#"><i class = 'fab fa-vk'></i></a></li>
+                     <li><a href = "#"><i class = 'fab fa-youtube'></i></a></li>    
+                 </ul>
+                 <a href = "#">I forgot my E-mail or password</a>
+             </form> 
+             <form class = "tab-form ">
+                 <div class = "inputBox ">
+                    <label class = "labelText">Enter  name</label>
+                    <input class = 'input' type = "text">
+                </div>
+                <div class = "inputBox">
+                    <label class = "labelText">Enter e-mail adress </label>
+                    <input class = 'input' type = "email" >
+                </div>
+                <div class = "inputBox">
+                    <label class = "labelText">Enter password</label>
+                    <input class = 'input'type = "email" >
+                </div>
+                    <a href = "#" class = "button">Registration</a>
+                    <div class =  "inputBox">
+                        <span><input  type = "checkbox" ></span>
+                        <label >I have read and accept <a href = "#"></a>the terms of the agreement</label>
+                    </div>
+            </form> 
+          </div>   
+        </div>
+        -------------------------------------------------->
+<!---- =-==================================JSON Ajax===========================--->
+<h1>Введите данные</h1>
+<form name="registerForm">
+    <label>Имя</label></br>
+    <input type="text" name="userName" /></br></br>
+    <label>Возраст</label></br>
+    <input type="number" name="userAge" /></br></br>
+    <button type="submit" id="submit">Отправить</button>
+</form>
+<form id = "robby">
+    <input type = "button" onclick = "alert(document.forms[1].id);"
+     value = "robby's form"/>
+</form>
+
+    <script src = "public.js"></script>
+    </body>
+</html>

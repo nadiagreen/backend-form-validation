@@ -1,0 +1,6 @@
+$ cd "Desktop/Projects/backend-form-validation/"
+crtl + c -- Pravoy knopkoy paste
+$ git add .
+$ git status
+$ git commit -m "My Commit"
+$ git push
