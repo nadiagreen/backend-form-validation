@@ -18,11 +18,11 @@ app.get("/", function(request, response){
       
     response.sendFile(__dirname + "/public.html");
 });
- function call(func) {
-     func(); 
- }
- var printSomething = function (){
-     console.log("Prosto text");
- }
- call(printSomething);
+//===========================================================================================
+var array_counter = function(array) {
+    return "There are " + array.length + " in the array.";
+}
+console.log(array_counter([1, 7, 99, 45, 8]));
+//==================================================================================
+  
 app.listen(3000);
