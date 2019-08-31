@@ -23,6 +23,7 @@ var array_counter = function(array) {
     return "There are " + array.length + " in the array.";
 }
 console.log(array_counter([1, 7, 99, 45, 8]));
+require('Desktop/Projects/backend-form-validation/public/');
 //==================================================================================
   
 app.listen(3000);
