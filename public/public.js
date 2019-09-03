@@ -1,3 +1,4 @@
+/*
 var dwsForm = document.getElementsByClassName("dws-form");
 var arrDwsForm = [...dwsForm];
 var tabs = document.getElementsByClassName("tab");
@@ -26,3 +27,4 @@ var inputs = document.getElementsByClassName('input');
          }
      });
  }
+ */

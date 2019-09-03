@@ -1,29 +1,16 @@
- 
 
-const express = require("express");
-  
-const app = express();
-app.use(express.static('public' ));
-// создаем парсер для данных в формате json
-const jsonParser = express.json();
-  
-app.post("/user", jsonParser, function (request, response) {
-    console.log(request.body);
-    if(!request.body) return response.sendStatus(400);
-     
-    response.json(request.body); // отправляем пришедший ответ обратно
+var fs = require('fs');
+var http = require('http');
+var server = http.createServer(function(req, res) {
+    console.log("URL stranitsi: " + req.url);
+    res.writeHead(200, {'Content-type': 'application/json; charset=utf-8'});
+ 
+    var obj = {
+        model: 'Audi',
+        speed: '234.5', 
+        wheels: 4
+    };
+    res.end(JSON.stringify(obj));
 });
-  
-app.get("/", function(request, response){
-      
-    response.sendFile(__dirname + "/public.html");
-});
-//===========================================================================================
-var array_counter = function(array) {
-    return "There are " + array.length + " in the array.";
-}
-console.log(array_counter([1, 7, 99, 45, 8]));
-require('Desktop/Projects/backend-form-validation/public/');
-//==================================================================================
-  
-app.listen(3000);
+ server.listen(3000, '127.0.0.1');
+ console.log("Mi otslezhivaem port 3000");

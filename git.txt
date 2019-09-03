@@ -4,3 +4,4 @@ $ git add .
 $ git status
 $ git commit -m "My Commit"
 $ git push
+cd..    skorotiti shlyah
