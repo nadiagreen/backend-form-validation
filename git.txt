@@ -3,5 +3,14 @@ crtl + c -- Pravoy knopkoy paste
 $ git add .
 $ git status
 $ git commit -m "My Commit"
+
 $ git push
+file --> open folder
 cd..    skorotiti shlyah
+npm init -f
+npm install
+
+
+ "C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe" --storageEngine=mmapv1
+:C -> data -> db pochistit
+щёлочная почва недостаток Mn, Zn, Cu, 
